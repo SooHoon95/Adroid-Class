@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택을 시작하시겠습니까?"
+        android:textSize="20dp"
+        android:paddingBottom="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cbStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작함"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="좋아하는 동물은?"
+            android:textSize="20dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <RadioButton
+                android:id="@+id/dog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/animal01"
+                />
+
+            <RadioButton
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/animal02"
+                />
+
+            <RadioButton
+                android:id="@+id/rabbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/animal03"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택완료"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgdog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dog"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/imgcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cat"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/imgrabbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rabbit"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

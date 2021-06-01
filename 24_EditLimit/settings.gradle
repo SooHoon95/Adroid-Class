@@ -1,0 +1,2 @@
+rootProject.name = "24_Edit Limit"
+include ':app'

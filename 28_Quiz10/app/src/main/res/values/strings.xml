@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">28_Quiz10</string>
+    <string name="animal01">강아지</string>
+    <string name="animal02">고양이</string>
+    <string name="animal03">토끼</string>
+
+</resources>
