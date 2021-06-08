@@ -1,0 +1,2 @@
+rootProject.name = "63_JSON practice"
+include ':app'
